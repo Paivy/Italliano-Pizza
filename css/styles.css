@@ -5,7 +5,7 @@
   font-size: 2em;
 }
 body {
-  background-image: url("images/pranjall-kumar-sejqj6Eaqe8-unsplash.jpg");
+  background-image: url("/images/pranjall-kumar-sejqj6Eaqe8-unsplash.jpg");
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;
@@ -106,7 +106,7 @@ h5 {
 }
 .banner {
   color: #fdb913;
-  background-image: url("images/p4.jpg");
+  background-image: url("/images/p4.jpg");
   height: 600px;
 }
 .banner h1 {
