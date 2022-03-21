@@ -10,6 +10,7 @@ $(document).ready(function () {
     this.pizzaPrice = 0;
     this.amount = amount;
   }
+
   Order.prototype.pizzaCost = function () {
     if (this.size === "small-pizza") {
       this.pizzaPrice += 500;
@@ -44,6 +45,7 @@ $(document).ready(function () {
     this.address = address;
     this.deliveryAddress = address;
   }
+
   Order.prototype.finalCost = function () {
     var cartTotalPrice = [];
     for (
@@ -53,8 +55,10 @@ $(document).ready(function () {
     ) {
       cartTotalPrice += totalPriceArray[arrayElement];
     }
-    return cartTotalPrice;
+    $("#final-cost").append(cartTotalPrice);
+    //   return cartTotalPrice;
   };
+
   $(".btn.check-out").click(function () {});
   $("form#custom-pizza").submit(function (event) {
     event.preventDefault();
